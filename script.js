@@ -17,7 +17,6 @@ function smoothScroll(e) {
   }
 }
 
-
 // Contact form submit (dummy)
 const form = document.getElementById('contact-form');
 form.addEventListener('submit', (e) => {
@@ -26,3 +25,13 @@ form.addEventListener('submit', (e) => {
   form.reset();
 });
 
+// Hamburger toggle
+const hamburger = document.getElementById('hamburger');
+const navLinks = document.getElementById('nav-links');
+
+hamburger.addEventListener('click', () => {
+  navLinks.classList.toggle('show');
+
+  // Animasi hamburger
+  hamburger.classList.toggle('active');
+});
